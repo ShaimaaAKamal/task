@@ -1,6 +1,8 @@
 :root{
  --color:rgba(245, 247, 255, 0.85);
  --pgColor:#1F1249;
+ --formSecColor:#98AEF8;
+ --formText:#3B3B3B;
 }
 html{
     font-family: 'Mulish', sans-serif;
@@ -14,9 +16,14 @@ body{
 .btnColor{
     background-image: linear-gradient(135deg,#2663DF,#758FF0);
 }
-
+.registerColor{
+    color:var(--formSecColor);
+}
 .fBold{
     font-weight: 700;
+}
+.ps-6{
+    padding-left:calc(2.3rem + 10px);
 }
 
 .fs-wHeading{
@@ -35,9 +42,30 @@ body{
     font-weight: 400;
     color:var(--pgColor);
 }
-.bgColor{
- background-color:var(--color);
+.form-control{
+    border:.5px solid var(--formSecColor);
 }
+.form-control:focus{
+        box-shadow: none;
+        border-width: 2px;
+}
+.form-control::placeholder{
+    color:var(--formText);
+}
+.bgColor{
+    background-color:var(--color);
+}
+.icon{
+    z-index:4;
+    top:12.5px;
+    left:15px;
+    padding-right:8px;
+    border-right:1px solid var(--formSecColor);
+}
+.Invaild{
+  border:2px solid #DC3545 !important  
+}
+
 
 @media screen and (min-width:768px){
     body{
@@ -46,6 +74,9 @@ body{
     .parent{
         width:90%;
         margin:0 auto;
+    }
+    #register{
+                width:100%;
     }
 }
 
