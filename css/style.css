@@ -39,8 +39,11 @@ body{
 .f-p{
     line-height: 1.6;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     color:var(--pgColor);
+}
+.btnLine{
+    line-height: 1.4;
 }
 .form-control{
     border:.5px solid var(--formSecColor);
@@ -51,6 +54,7 @@ body{
 }
 .form-control::placeholder{
     color:var(--formText);
+    font-weight: 300;
 }
 .bgColor{
     background-color:var(--color);
@@ -66,10 +70,10 @@ body{
   border:2px solid #DC3545 !important  
 }
 
-
 @media screen and (min-width:768px){
+   
     body{
-        background-image: linear-gradient(45deg,#EBB7C5,#CBD6F9); 
+        background-image: linear-gradient(135deg,#E5BFD1,#E6BED1,#E3CDE2 ,#cbd6f9,#DDE1F6,#B9C8F9 90%); 
         }
     .parent{
         width:90%;
@@ -78,13 +82,18 @@ body{
     #register{
                 width:100%;
     }
+    .successfullParent{
+        height: 100vh;
+    }
 }
 
 
 @media screen and (min-width:992px){
-   
+     .fullParent{
+        height: 100vh;
+    }
      .fs-wHeading{
-            font-size:3.5rem ;
+            font-size:3rem ;
         }
     .fs-OHeading{
         font-size:2.6rem ;
