@@ -7,12 +7,16 @@ const handleChange=(e)=>{
     if(!notcreated.classList.contains('d-none'))notcreated.classList.add('d-none')
   if(e.target.value === '' && !e.target.nextElementSibling.classList.contains('d-none'))  
     {e.target.nextElementSibling.classList.add('d-none');
+      e.target.style.borderColor='#98AEF8';
+     
      }
   else if(!chooseValidate(e.target.name,e.target.value)) 
     {e.target.nextElementSibling.classList.remove('d-none');
+     e.target.style.borderColor='#DC3545';
     }   
   else 
       {e.target.nextElementSibling.classList.add('d-none');
+       e.target.style.borderColor='#0f0';
       }
     formValidate();
 }

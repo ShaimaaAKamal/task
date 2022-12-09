@@ -66,9 +66,7 @@ body{
     padding-right:8px;
     border-right:1px solid var(--formSecColor);
 }
-.Invaild{
-  border:2px solid #DC3545 !important  
-}
+
 
 @media screen and (min-width:768px){
    
