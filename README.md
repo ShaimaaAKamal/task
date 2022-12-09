@@ -21,7 +21,7 @@ These are basics onboarding screen to enable user to register on a site
   - Register.html
   - success.html
 
-### js
+## js
 
 In this folder we have:
 
@@ -31,20 +31,19 @@ In this folder we have:
   - RegisterModule.js which is responsible for our register page functionality.
   - successModule.js which is responsible for our success page functionality.
 
-### css
-<u>
+## css
 
 - Holds sites styling
 
-### index.html
+## index.html
 
 - It's our landing page
 
-### Register.html
+## Register.html
 
 - The page through which user is able to create an account on our site
 
-### success.html
+## success.html
 
 - The page that will be displayed to user in case of success registeration
 
