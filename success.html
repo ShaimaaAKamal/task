@@ -9,10 +9,35 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Jewels-success</title>
+   <script>
+    localStorage.setItem('page','success')
+     const user=localStorage.getItem('user')?localStorage.getItem('user'):false;
+     if(!user) location.replace('register.html');
+  </script>
 </head>
 <body>
- 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+ <div class="vh-100 d-flex align-items-center justify-content-center">
+      <div class="parent">
+          <div class="container-lg px-4 py-5 bgColor rounded-3 ">
+                <div class="row text-center text-md-start g-5 ">
+                    <div class="col-md-5">
+                        <div>
+                            <img src="./images/success.png" alt="welcome image" class="w-100 d-lg-none rounded-3">
+                            <img src="./images/success-desktop.png" alt="welcome image" class="w-100 d-none d-lg-inline rounded-3">
+                        </div>
+                    </div>
+                    <div class="col-md-7 align-self-md-center">
+                        <div>
+                            <h1 class="fs-oHeading">Successfully Logged in</h1>
+                            <p class="f-p my-4 LoggedEmail text-decoration-underline">
+                              
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+  </div>
+ <script src="js/script.js" type="module"></script>
 </body>
 </html>
