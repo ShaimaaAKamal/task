@@ -10,9 +10,76 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Register</title>
+  <script>
+    localStorage.setItem('page','register')
+  </script>
 </head>
 <body>
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+      <div class="parent" id="register">
+          <div class="container-lg px-4 py-5 bgColor rounded-3 ">
+                <div class="row text-center text-lg-start g-5 ">
+                    <div class="col-lg-5">
+                        <div>
+                            <img src="./images/create.png" alt="welcome image" class="w-100 d-lg-none rounded-3">
+                            <img src="./images/desktop-create.png" alt="welcome image" class="w-100 d-none d-lg-inline rounded-3">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 align-self-md-center">
+                        <div>
+                             <h1 class="fs-oHeading">Create Account</h1>
+                            <p class="f-p my-4">
+                                Create Account
+                                Go ahead and sign up, let everyone know how awesome you are!
+                            </p>
+                            <div class="alert alert-danger d-none text-center notcreated">
+                              User hasn't been created.
+                            </div>
+                            <div > 
+                                  <div class="input-group mb-3 position-relative">
+                                    <input type="text" class="form-control w-100 ps-6 py-2 rounded-3" placeholder="Username" name="username" aria-label="Username" >
+                                      <div class="mt-1 d-none nameError">
+                                        <ul class="my-0 py-0 text-start">
+                                            <li class="text-danger small">Username length must at least 5</li>
+                                            <li class="text-danger small">Username can't be greater than 15</li>
+                                            <li class="text-danger small">username can't start or end with a number </li>
+                                        </ul>
+                                    </div>
+                                    <i class="fa-regular icon registerColor position-absolute fa-user "></i>
+                                  </div>
+                                  <div class="input-group mb-3 position-relative">
+                                    <input type="email" class="form-control w-100 ps-6 py-2 rounded-3" placeholder="Email" name="email" aria-label="Email">
+                                    <small class="text-danger mt-1 d-none  emailError">Invalid Email Address</small>
+                                    <i class="fa-regular fa-envelope icon registerColor position-absolute"></i>
+                                  </div>
+                                  <div class="input-group mb-3 position-relative">
+                                    <input type="password" class="form-control ps-6 w-100 py-2 rounded-3" placeholder="Password" name="password" aria-label="Password" >
+                                    <div class="mt-1 d-none confirmPasswordError">
+                                        <ul class="my-0 py-0 text-start">
+                                            <li class="text-danger small">Password length must at least 8</li>
+                                            <li class="text-danger small">Password must start with Uppercase letter</li>
+                                            <li class="text-danger small">Password must contains one number</li>
+                                            <li class="text-danger small">Password must contains special character</li>
+                                        </ul>
+                                    </div>
+                                    <i class="fa-solid fa-lock icon registerColor position-absolute "></i>
+                                  </div>
+                                  <div class="input-group mb-4 position-relative">
+                                    <input type="password" class="form-control w-100 ps-6 py-2 rounded-3" placeholder="Confirm Password" name="confirmPassword" aria-label="Confirm Password">
+                                    <small class="text-danger mt-1 d-none  confirmPasswordError">Password doesn't match</small>
+                                    <i class="fa-solid fa-lock icon registerColor position-absolute "></i>
+                                  </div>
+                                  <div>
+                                    <button class="fBold btn btnColor text-white w-100 py-3 disabled formButton">Create Account</button>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+  </div>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js" type="module"></script>
 </body>
 </html>
