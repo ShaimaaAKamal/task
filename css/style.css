@@ -1,34 +1,69 @@
 :root{
  --color:rgba(245, 247, 255, 0.85);
+ --pgColor:#1F1249;
 }
 html{
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
 }
 
+body{
+     background-color:var(--color);
+    }
+
+.btnColor{
+    background-image: linear-gradient(135deg,#2663DF,#758FF0);
+}
+
+.fBold{
+    font-weight: 700;
+}
+
 .fs-wHeading{
+    line-height: 1.2;
+    font-weight: 700;
     font-size:2.6rem ;
 }
 .fs-OHeading{
-        font-size:2rem ;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size:2rem ;
 }
 .f-p{
+    line-height: 1.6;
     font-size: 1rem;
+    font-weight: 400;
+    color:var(--pgColor);
 }
 .bgColor{
-  /* background: linear-gradient(to left,rgba(243, 237, 246, 1),rgba(245, 247, 255, 0.85)); */
  background-color:var(--color);
-
 }
 
+@media screen and (min-width:768px){
+    body{
+        background-image: linear-gradient(45deg,#EBB7C5,#CBD6F9); 
+        }
+    .parent{
+        width:90%;
+        margin:0 auto;
+    }
+}
+
+
 @media screen and (min-width:992px){
+   
      .fs-wHeading{
             font-size:3.5rem ;
         }
     .fs-OHeading{
         font-size:2.6rem ;
         }
-        .f-p{
-            font-size: 1.5rem;
-        }
+}
+
+@media screen and (min-width:1200px){
+    
+    .parent{
+        width:80%;
+        margin:0 auto;
+    }    
 }
